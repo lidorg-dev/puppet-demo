@@ -1,7 +1,4 @@
-node node-1 {
- file {'/root/README':
-  ensure => file,
-  content => 'this is a change for dima',
-  owner => 'root',
-     }
+node 'puppet-server' {
+   include role::master_server
  }
+ 
