@@ -11,5 +11,5 @@ class minecraft {
    package {'java':
      ensure => present,
      }
-     
+   }  
    
