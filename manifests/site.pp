@@ -2,7 +2,7 @@ node 'puppet-server' {
    include role::master_server
  }
 node 'node-2' {
-   
+   include role::minecraft_server
  } 
 
 
