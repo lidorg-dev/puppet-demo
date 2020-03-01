@@ -6,7 +6,8 @@ class minecraft {
    ensure => present,
    }
    exec {'wget http://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar -o /opt/minecraft/minecraft_server.jar':
- 
+       path     => '/usr/bin:/usr/sbin:/bin',
+       provider => shell,
      }
      
    package {'java':
